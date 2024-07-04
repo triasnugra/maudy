@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Periodic Table</title>
+    <title>Interactive Periodic Table</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="periodic-table">
-        <div class="element" data-name="Hydrogen" data-symbol="H" data-number="1" style="grid-area: 1 / 1 / 2 / 2;">
-            H
-        </div>
-        <div class="element" data-name="Helium" data-symbol="He" data-number="2" style="grid-area: 1 / 18 / 2 / 19;">
-            He
-        </div>
-        <!-- Add more elements here -->
+        <!-- Elements will be dynamically loaded here -->
     </div>
+    <div class="element-info" id="element-info">
+        <h2 id="element-name">Element Name</h2>
+        <p>Symbol: <span id="element-symbol"></span></p>
+        <p>Atomic Number: <span id="element-number"></span></p>
+        <p>Atomic Mass: <span id="element-mass"></span></p>
+        <!-- Add more details as needed -->
+    </div>
+    <script src="elements.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

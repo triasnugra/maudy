@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const elementSymbol = document.getElementById('element-symbol');
     const elementNumber = document.getElementById('element-number');
     const elementMass = document.getElementById('element-mass');
+    const elementCategory = document.getElementById('element-category');
 
     elements.forEach(element => {
         const elementDiv = document.createElement('div');
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             elementSymbol.textContent = element.symbol;
             elementNumber.textContent = element.number;
             elementMass.textContent = element.mass;
+            elementCategory.textContent = element.category;
             elementInfo.style.display = 'block';
         });
 

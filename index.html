@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Periodic Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Interactive Periodic Table</h1>
+    <div class="table">
+        <!-- Example element box -->
+        <div class="element" onclick="showContent('H')">
+            <div class="symbol">H</div>
+            <div class="name">Hydrogen</div>
+        </div>
+        <!-- Repeat similar blocks for other elements -->
+    </div>
+
+    <!-- Modal for displaying content -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="elementContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

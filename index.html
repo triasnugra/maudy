@@ -7,14 +7,32 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Interactive Periodic Table</h1>
+    <h1>Hi, Maudy</h1>
     <div class="table">
         <!-- Example element box -->
-        <div class="element" onclick="showContent('H')">
+        <div class="element" style="grid-column: 1" onclick="showContent('H')">
             <div class="symbol">H</div>
+            <div class="number">1</div>
             <div class="name">Hydrogen</div>
         </div>
-        <!-- Repeat similar blocks for other elements -->
+        <!-- Add more element boxes similarly -->
+        <div class="element" style="grid-column: 18" onclick="showContent('He')">
+            <div class="symbol">He</div>
+            <div class="number">2</div>
+            <div class="name">Helium</div>
+        </div>
+        <!-- Row 2 -->
+        <div class="element" style="grid-column: 1" onclick="showContent('Li')">
+            <div class="symbol">Li</div>
+            <div class="number">3</div>
+            <div class="name">Lithium</div>
+        </div>
+        <div class="element" style="grid-column: 2" onclick="showContent('Be')">
+            <div class="symbol">Be</div>
+            <div class="number">4</div>
+            <div class="name">Beryllium</div>
+        </div>
+        <!-- Continue adding elements as needed -->
     </div>
 
     <!-- Modal for displaying content -->
